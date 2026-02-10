@@ -33,33 +33,62 @@ export const legalContent = {
     },
     privacy: {
         title: "Privacy Policy",
-        lastUpdatedPrefix: "Last updated: ",
+        lastUpdatedPrefix: "Last Updated: ",
+        lastUpdatedDate: "10/02/2026",
+        description: "Welcome to FunAIConnect. We are committed to protecting your privacy while fostering a creative and educational social environment. This Privacy Policy explains how we collect, use, and protect your information across our Android and iOS applications.",
         sections: [
             {
-                title: "1. Introduction",
-                content: "Welcome to FunAIConnect. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you."
+                title: "1. Age Requirement (13+)",
+                content: "Our services are strictly for individuals aged 13 and older. We do not knowingly collect data from children under 13. If we discover a user is under this age, we will delete their account and data immediately."
             },
             {
-                title: "2. Data We Collect",
-                content: "We may collect, use, store and transfer different kinds of personal data about you which we have grouped together follows:",
+                title: "2. Information We Collect",
+                content: "To provide a social media experience, we collect the following:",
                 list: [
-                    "<strong>Identity Data</strong> includes first name, maiden name, last name, username or similar identifier.",
-                    "<strong>Contact Data</strong> includes billing address, delivery address, email address and telephone numbers.",
-                    "<strong>Technical Data</strong> includes internet protocol (IP) address, your login data, browser type and version."
+                    "<strong>Account Data:</strong> Name, email address, and profile picture provided during registration.",
+                    "<strong>User Content:</strong> Posts, images, and text you upload or create.",
+                    "<strong>AI-Generated Content:</strong> Data related to the prompts you provide our AI to generate or enhance posts.",
+                    "<strong>Device Permissions:</strong><ul style='list-style-type: circle; margin-left: 1rem; margin-top: 0.5rem;'><li><strong>Camera/Gallery:</strong> To upload and share photos/videos.</li><li><strong>Microphone:</strong> For video-related features.</li><li><strong>Storage:</strong> To save created content to your device.</li></ul>"
                 ]
             },
             {
-                title: "3. How We Use Your Data",
-                content: "We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:",
+                title: "3. How We Use Your Information",
+                content: "We use your data to:",
                 list: [
-                    "Where we need to perform the contract we are about to enter into or have entered into with you.",
-                    "Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.",
-                    "Where we need to comply with a legal or regulatory obligation."
+                    "Provide and maintain your social profile.",
+                    "<strong>AI Integration:</strong> Use AI tools to help you generate creative posts and educational content.",
+                    "<strong>Safety & Moderation:</strong> Use AI-driven filters to scan and block sexual, pornographic, or sensitive content to maintain a safe environment for our 13+ audience.",
+                    "Improve our algorithms to promote educational and creative visibility."
                 ]
             },
             {
-                title: "4. Data Security",
-                content: "We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed."
+                title: "4. Safety and Content Moderation",
+                content: "We prioritize a safe community.",
+                list: [
+                    "<strong>Prohibited Content:</strong> We strictly prohibit the upload of pornography, sexual content, or highly sensitive material.",
+                    "<strong>AI Moderation:</strong> Every post is screened by our AI moderation system. Content flagged as a violation will be removed, and users may face account suspension."
+                ]
+            },
+            {
+                title: "5. Data Sharing & Third Parties",
+                content: "We do not sell your personal data. We may share data with:",
+                list: [
+                    "<strong>Cloud Providers:</strong> To store your data securely (e.g., AWS or Google Cloud).",
+                    "<strong>AI Service Providers:</strong> To process your prompts for content generation.",
+                    "<strong>Legal Authorities:</strong> If required by law to comply with legal obligations."
+                ]
+            },
+            {
+                title: "6. Data Retention and Deletion",
+                content: "You have full control over your data.",
+                list: [
+                    "<strong>Account Deletion:</strong> You can delete your account at any time through the app settings.",
+                    "<strong>Manual Request:</strong> You may also request data deletion by contacting us at [Insert Support Email]. Upon deletion, your personal data will be removed from our active databases within 30 days."
+                ]
+            },
+            {
+                title: "7. Contact Us",
+                content: "If you have questions about this Privacy Policy or our data practices, please contact us at: Email: contact.reinventing@gmail.com, Website: https://ranjan-sharma-portfollio.netlify.app/"
             }
         ]
     },
