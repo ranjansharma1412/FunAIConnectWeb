@@ -1,58 +1,50 @@
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
+import { legalContent } from '../data/legalContent';
 
 const ContactUs = () => {
+    const { title, contactInfo, form } = legalContent.contact;
+
     return (
         <div className="contact-container">
-            <h1 style={{ textAlign: 'center', marginBottom: '3rem' }}>Get in Touch</h1>
+            <h1 style={{ textAlign: 'center', marginBottom: '3rem' }}>{title}</h1>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
 
                 {/* Contact Info */}
                 <div>
-                    <h2>Contact Information</h2>
+                    <h2>{contactInfo.title}</h2>
                     <p style={{ opacity: 0.8, marginBottom: '2rem' }}>
-                        Have a question or just want to say hi? We'd love to hear from you.
+                        {contactInfo.description}
                     </p>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                            <div style={{ background: 'var(--card-bg)', padding: '0.8rem', borderRadius: '50%', border: '1px solid var(--border-color)' }}>
-                                <Mail size={24} color="var(--primary-color)" />
-                            </div>
-                            <div>
-                                <h4 style={{ margin: 0 }}>Email</h4>
-                                <a href="mailto:support@funaiconnect.com" style={{ color: 'var(--text-color)', opacity: 0.8 }}>support@funaiconnect.com</a>
-                            </div>
-                        </div>
-
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                            <div style={{ background: 'var(--card-bg)', padding: '0.8rem', borderRadius: '50%', border: '1px solid var(--border-color)' }}>
-                                <Phone size={24} color="var(--primary-color)" />
-                            </div>
-                            <div>
-                                <h4 style={{ margin: 0 }}>Phone</h4>
-                                <span style={{ opacity: 0.8 }}>+1 (555) 123-4567</span>
-                            </div>
-                        </div>
-
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                            <div style={{ background: 'var(--card-bg)', padding: '0.8rem', borderRadius: '50%', border: '1px solid var(--border-color)' }}>
-                                <MapPin size={24} color="var(--primary-color)" />
-                            </div>
-                            <div>
-                                <h4 style={{ margin: 0 }}>Address</h4>
-                                <span style={{ opacity: 0.8 }}>123 AI Street, Tech City, TC 90210</span>
-                            </div>
-                        </div>
+                        {contactInfo.details.map((detail, index) => {
+                            const Icon = detail.icon;
+                            return (
+                                <div key={index} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                    <div style={{ background: 'var(--card-bg)', padding: '0.8rem', borderRadius: '50%', border: '1px solid var(--border-color)' }}>
+                                        <Icon size={24} color="var(--primary-color)" />
+                                    </div>
+                                    <div>
+                                        <h4 style={{ margin: 0 }}>{detail.title}</h4>
+                                        {detail.link ? (
+                                            <a href={detail.link} style={{ color: 'var(--text-color)', opacity: 0.8 }}>{detail.value}</a>
+                                        ) : (
+                                            <span style={{ opacity: 0.8 }}>{detail.value}</span>
+                                        )}
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 
                 {/* Contact Form */}
                 <div className="card">
-                    <h3 style={{ marginTop: 0 }}>Send us a Message</h3>
+                    <h3 style={{ marginTop: 0 }}>{form.title}</h3>
                     <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }} onSubmit={(e) => e.preventDefault()}>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <label htmlFor="name" style={{ fontSize: '0.9rem', fontWeight: 500 }}>Name</label>
+                            <label htmlFor="name" style={{ fontSize: '0.9rem', fontWeight: 500 }}>{form.fields.name}</label>
                             <input
                                 type="text"
                                 id="name"
@@ -70,7 +62,7 @@ const ContactUs = () => {
                         </div>
 
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <label htmlFor="email" style={{ fontSize: '0.9rem', fontWeight: 500 }}>Email</label>
+                            <label htmlFor="email" style={{ fontSize: '0.9rem', fontWeight: 500 }}>{form.fields.email}</label>
                             <input
                                 type="email"
                                 id="email"
@@ -88,7 +80,7 @@ const ContactUs = () => {
                         </div>
 
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <label htmlFor="message" style={{ fontSize: '0.9rem', fontWeight: 500 }}>Message</label>
+                            <label htmlFor="message" style={{ fontSize: '0.9rem', fontWeight: 500 }}>{form.fields.message}</label>
                             <textarea
                                 id="message"
                                 rows={4}
@@ -116,7 +108,7 @@ const ContactUs = () => {
                             alignItems: 'center',
                             gap: '0.5rem'
                         }}>
-                            Send Message <Send size={18} />
+                            {form.buttonText} <Send size={18} />
                         </button>
                     </form>
                 </div>
