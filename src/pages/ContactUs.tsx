@@ -100,9 +100,6 @@ const ContactUs = () => {
 
                         <button type="submit" style={{
                             marginTop: '1rem',
-                            backgroundColor: 'var(--primary-color)',
-                            color: 'white',
-                            border: 'none',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',

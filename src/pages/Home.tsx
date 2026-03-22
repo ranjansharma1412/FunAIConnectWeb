@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="home-container">
             <section style={{ textAlign: 'center', padding: '4rem 0' }}>
-                <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem', background: 'linear-gradient(to right, #646cff, #535bf2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem', background: 'var(--primary-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                     Welcome to FunAIConnect
                 </h1>
                 <p style={{ fontSize: '1.25rem', color: 'var(--text-color)', opacity: 0.9, maxWidth: '600px', margin: '0 auto 2rem' }}>
@@ -13,9 +13,6 @@ const Home = () => {
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
                     <button style={{
-                        backgroundColor: 'var(--primary-color)',
-                        color: 'white',
-                        border: 'none',
                         display: 'flex',
                         alignItems: 'center',
                         gap: '0.5rem',
