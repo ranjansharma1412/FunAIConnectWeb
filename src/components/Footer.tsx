@@ -10,7 +10,7 @@ const Footer = () => {
         }}>
             <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
                 <div>
-                    &copy; {new Date().getFullYear()} FunAIConnect. All rights reserved.
+                    &copy; {new Date().getFullYear()} Reinventing. All rights reserved.
                 </div>
                 <div style={{ display: 'flex', gap: '1.5rem' }}>
                     <Link to="/privacy" style={{ fontSize: '0.9rem', color: 'var(--text-color)' }}>Privacy Policy</Link>

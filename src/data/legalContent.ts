@@ -12,7 +12,7 @@ export const legalContent = {
             },
             {
                 title: "2. Intellectual Property Rights",
-                content: "Other than the content you own, under these Terms, FunAIConnect and/or its licensors own all the intellectual property rights and materials contained in this Website."
+                content: "Other than the content you own, under these Terms, Reinventing and/or its licensors own all the intellectual property rights and materials contained in this Website."
             },
             {
                 title: "3. Restrictions",
@@ -35,7 +35,7 @@ export const legalContent = {
         title: "Privacy Policy",
         lastUpdatedPrefix: "Last Updated: ",
         lastUpdatedDate: "10/02/2026",
-        description: "Welcome to FunAIConnect. We are committed to protecting your privacy while fostering a creative and educational social environment. This Privacy Policy explains how we collect, use, and protect your information across our Android and iOS applications.",
+        description: "Welcome to BeeGather. We are committed to protecting your privacy while fostering a creative and educational social environment. This Privacy Policy explains how we collect, use, and protect your information across our Android and iOS applications.",
         sections: [
             {
                 title: "1. Age Requirement (13+)",
@@ -101,8 +101,8 @@ export const legalContent = {
                 {
                     icon: Mail,
                     title: "Email",
-                    value: "support@funaiconnect.com",
-                    link: "mailto:support@funaiconnect.com"
+                    value: "support@beegather.com",
+                    link: "mailto:support@beegather.com"
                 },
                 {
                     icon: Phone,

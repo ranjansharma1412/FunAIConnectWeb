@@ -36,7 +36,7 @@ const Header = ({ theme, toggleTheme }: HeaderProps) => {
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-color)' }}>
-                    <span>FunAIConnect</span>
+                    <span>BeeGather</span>
                 </Link>
 
                 {/* Desktop Navigation */}

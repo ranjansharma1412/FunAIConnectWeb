@@ -71,4 +71,4 @@ export default defineConfig([
   },
 ])
 ```
-# FunAIConnectWeb
+# BeeGather Web
