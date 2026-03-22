@@ -35,8 +35,12 @@ const Header = ({ theme, toggleTheme }: HeaderProps) => {
             zIndex: 100
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-color)' }}>
-                    <span>BeeGather</span>
+                <Link to="/" style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+                    <img src="/bee_logo.svg" alt="BeeGather Logo" style={{ width: '32px', height: '32px' }} />
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <span style={{ fontWeight: 'bold', background: 'var(--primary-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Bee</span>
+                        <span style={{ fontWeight: 'normal', color: 'var(--text-color)' }}>Gather</span>
+                    </div>
                 </Link>
 
                 {/* Desktop Navigation */}
